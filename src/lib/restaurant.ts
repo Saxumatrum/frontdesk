@@ -29,7 +29,7 @@ export const POLICIES = [
   "Online bookings are for 1 to 8 people. Groups of 9 or more, private hire and events go to the team.",
   "Bookings of 6 or more need a £10 per person deposit, taken by the team after booking; it comes off the bill.",
   "Cancellations: free up to 24 hours before. Later cancellations of 6+ lose the deposit.",
-  "Walk-ins welcome at the bar (8 seats), first come first served.",
+  "Walk-ins welcome at the bar (8 seats), first come first served; bar seats can't be booked.",
   "Children welcome until 20:00; high chairs available (mention it in the booking notes).",
   "Dogs welcome in the bar area only, not the dining room.",
   "Step-free entrance and an accessible toilet on the ground floor.",
