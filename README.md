@@ -4,7 +4,7 @@ An AI host for a restaurant's website or WhatsApp. It answers menu, allergen and
 restaurant's own data, checks free tables, takes bookings after the guest confirms, and hands anything it
 shouldn't handle (big groups, private hire, complaints) to staff with a one-line summary.
 
-Live demo: https://adjetei-martey.vercel.app/play/frontdesk (Ember & Fig is a made-up restaurant).
+Live demo: https://www.adjetei.com/play/frontdesk (Ember & Fig is a made-up restaurant).
 
 ## How it works
 
