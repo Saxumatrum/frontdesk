@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
-/* Warm palette: cream paper, ink-brown text, terracotta accent. The art-*
-   tones are only for illustrations and soft fills, never body text. */
+/* Warm palette: bright warm-white paper, ink-brown text, terracotta accent. The art-*
+   tones are only for illustrations and soft fills, never body text.
+   Theme: follows the device unless the visitor picked one with the header toggle, which sets
+   <html data-theme="light|dark"> (stored in localStorage "theme", shared with the /play demos). */
 :root {
-  --background: #fbf5ec;
+  --background: #fffdfa;
   --foreground: #2b1d16;
   --muted: #74625a;
-  --line: #ead9c6;
-  --card: #fffaf3;
+  --line: #f1e7dc;
+  --card: #ffffff;
   --accent: #b9481f;
   --art-sun: #f0a63a;
   --art-rose: #e8846a;
   --art-clay: #c65a32;
   --art-sage: #8f9d6c;
   --art-plum: #6e3b4e;
-  --art-sand: #f3dcc0;
+  --art-sand: #faf0e4;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #1a1310;
     --foreground: #f4e9dd;
     --muted: #b6a395;
@@ -31,7 +34,24 @@
     --art-sage: #7e8c5e;
     --art-plum: #b77a92;
     --art-sand: #3a2a20;
+    color-scheme: dark;
   }
+}
+
+:root[data-theme="dark"] {
+  --background: #1a1310;
+  --foreground: #f4e9dd;
+  --muted: #b6a395;
+  --line: #3a2b23;
+  --card: #231a15;
+  --accent: #f08f60;
+  --art-sun: #e9a13f;
+  --art-rose: #d9765c;
+  --art-clay: #b4532e;
+  --art-sage: #7e8c5e;
+  --art-plum: #b77a92;
+  --art-sand: #3a2a20;
+  color-scheme: dark;
 }
 
 @theme inline {
